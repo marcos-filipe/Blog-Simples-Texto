@@ -38,6 +38,8 @@ html,body{height: 100%;
 .rodape footer > h3{padding-top: 70px;
                     color: silver;}
 
+.rodape footer > p{color:silver;}
+
 .principal > h1{margin-left: 8%;
                 font-size: 41px;
                 padding-top: 35px;

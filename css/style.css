@@ -51,15 +51,15 @@
     
     .principal .slider-destaque-p{max-width: 750px;
                                 width: 95%;
-                                height: 410px;
+                                padding-bottom: 10%;
                                 margin: 0 auto;
                                 border-left: 5px solid #ccc;}
     
     .slider-destaque-p .aspas{width: 64px;
-                       height: 64px;
-                       background-image: url('../images/aspas-direita.png');
-                       background-size: contain;
-                       float: right;}
+                              height: 64px;
+                              background-image: url('../images/aspas-direita.png');
+                              background-size: contain;
+                              float: right;}
     
     .slider-destaque-p .slider-destaque{width: 100%;
                                         overflow: hidden;}
@@ -71,16 +71,15 @@
                               float: left;}
     
     
-    .artigo-art > article{
-                          padding: 0 5%;
+    .artigo-art > article{padding: 0 5%;
                           width: 90%;}
     
     .artigo-art article > h2{font-size: 31px;}
     
     .artigo-art article > p{font-size: 25px;
                             text-align: justify;
-                            margin-top: 15px;
-                            margin-bottom: 15px;}
+                            margin-top: 25px;
+                            margin-bottom: 25px;}
     
     .artigo-art article > span{font-size: 25px;
                                }
@@ -111,7 +110,7 @@
              text-align: center;
              color: white;
              position: relative;
-             top: 200px;
+             top: 150px;
              left: 50%;
              transform: translate(-50%);}
     
@@ -136,11 +135,11 @@
                               margin: 0 auto;
                               padding-bottom: 35px;}
     
-    .sessao-artigos > article > h2{font-size: 25px;}
+    .sessao-artigos > article > h2{font-size: 20px;}
     
-    .sessao-artigos > article > p{font-size: 18px;
-                                  margin-top: 25px;
-                                  margin-bottom: 25px;}
+    .sessao-artigos > article > p{font-size: 17px;
+                                  margin-top: 35px;
+                                  margin-bottom: 45px;}
     
     .sessao-artigos > article > span{font-size: 18px;}
     
@@ -158,11 +157,11 @@
                                margin: 0 auto;
                                padding-bottom: 35px;}
     
-    .sessao-artigos2 > article > h2{font-size: 25px;}
+    .sessao-artigos2 > article > h2{font-size: 20px;}
     
-    .sessao-artigos2 > article > p{font-size: 18px;
-                                   margin-top: 25px;
-                                   margin-bottom: 25px;}
+    .sessao-artigos2 > article > p{font-size: 17px;
+                                   margin-top: 35px;
+                                   margin-bottom: 45px;}
     
     .sessao-artigos2 > article > span{font-size: 18px;}
     
@@ -170,13 +169,11 @@
     
     @media screen and (max-width: 768px){
     
-          .principal .slider-destaque-p{height: 510px;}
-    
-          .artigo-art article > p{margin-top: 25px;
-                                  margin-bottom: 25px;}
+          
+          .artigo-art article > p{margin-top: 30px;
+                                  margin-bottom: 30px;}
     
           
-    
     
     }
     
@@ -184,9 +181,9 @@
     
     @media screen and (max-width: 668px){
     
-          .principal .slider-destaque-p{height: 610px;}
-    
           .principal > h1{margin-left: 10%;}
+    
+          
           
     }
     
@@ -194,10 +191,13 @@
     
     @media screen and (max-width: 500px){
     
-          .principal .slider-destaque-p{height: 710px;}
+         .principal > h1{margin-left: 8%;}
     
-          .principal > h1{margin-left: 8%;}
+         
     }
+    
+    
+    
     
     
     

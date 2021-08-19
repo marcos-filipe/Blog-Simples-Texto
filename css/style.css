@@ -47,6 +47,7 @@ html,body{height: 100%;
 
 
 .principal .slider-destaque{width: 95%;
+                            max-width: 400px;
                             height: 410px;
                             margin: 0 auto;}
 

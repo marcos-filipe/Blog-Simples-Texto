@@ -1,210 +1,221 @@
 *{margin: 0;
-  padding: 0;
-  box-sizing: border-box;}
-
-html,body{height: 100%;
-          background-color: rgb(238,238,238);}
-
-.both{clear: both;}
-
-.container{width: 100%;}
-
-.bg{width: 100%;
-           height: 450px;
-           background-color: #3c4043;
-           /*background-image: url('../images/bnr.jpg');
-           background-size: contain;*/
-           }
-
-
-.principal{width: 90%;
-           max-width: 900px;
-           padding-bottom: 600px;
-           background-color: white;
-           position: relative;
-           top: -350px;
-           left: 50%;
-           transform: translate(-50%);
-           border: 1px solid #ccc;}
-
-.rodape{width: 100%;
-        height: 250px;
-        background-color: #3c4043;
-        color: white;
-        text-align: center;
-        position: relative;
-        top: -360px;}
-
-.rodape footer > h3{padding-top: 70px;
-                    color: silver;}
-
-.rodape footer > p{color:silver;}
-
-.principal > h1{margin-left: 8%;
-                font-size: 41px;
-                padding-top: 35px;
-                color: #ccc;}
-
-
-.principal .slider-destaque{width: 95%;
-                            height: 410px;
-                            margin: 0 auto;}
-
-.slider-destaque .artigo-art{width: 100%;
-                             height: 100%;
-                             border-left: 5px solid #ccc;}
-
-.artigo-art .aspas{width: 64px;
-                   height: 64px;
-                   background-image: url('../images/aspas-direita.png');
-                   background-size: contain;
-                   float: right;}
-
-.artigo-art > article{position: absolute;
-                      display: none;
-                      padding: 0 5%;
-                      width: 90%;}
-
-.artigo-art article > h2{font-size: 31px;
-                         margin-top: 55px;}
-
-.artigo-art article > p{font-size: 25px;
-                        text-align: justify;
-                        margin-top: 15px;
-                        margin-bottom: 15px;}
-
-.artigo-art article > span{font-size: 25px;
-                           }
-
-.bullets-nav{
-      width: 100%;
-      text-align: center;
-      
-}
-
-.bullets-nav span{
-      width: 16px;
-      height: 16px;
-      display: inline-block;
-      border-radius: 8px;
-      background-color: #ccc;
-      cursor: pointer;
-      margin:0 20px;
-}
-
-.anuncio{width: 700px;
-         height: 250px;
-         background-color: #3c4043;
-         line-height: 250px;
-         text-align: center;
-         color: white;
-         position: relative;
-         top: 200px;
-         left: 50%;
-         transform: translate(-50%);}
-
-.anuncio2{width: 95%;
-          max-width: 500px;
-          height: 500px;
-          background-color: #3c4043;
-          margin: 0 auto;
-          line-height: 500px;
+      padding: 0;
+      box-sizing: border-box;}
+    
+    html,body{height: 100%;
+              background-color: rgb(238,238,238);}
+    
+    .both{clear: both;}
+    
+    .container{width: 100%;}
+    
+    .bg{width: 100%;
+               height: 450px;
+               background-color: #3c4043;
+               /*background-image: url('../images/bnr.jpg');
+               background-size: contain;*/
+               }
+    
+    
+    .principal{width: 95%;
+               max-width: 900px;
+               padding-bottom: 600px;
+               background-color: white;
+               position: relative;
+               top: -350px;
+               left: 50%;
+               transform: translate(-50%);
+               border: 1px solid #ccc;}
+    
+    .rodape{width: 100%;
+            height: 250px;
+            background-color: #3c4043;
+            color: white;
+            text-align: center;
+            position: relative;
+            top: -360px;}
+    
+    .rodape footer > h3{padding-top: 70px;
+                        color: silver;}
+    
+    .rodape footer > p{color:silver;}
+    
+    .principal > h1{margin-left: 12%;
+                    font-size: 41px;
+                    padding-top: 35px;
+                    color: #ccc;}
+    
+    
+    
+    
+    
+    .principal .slider-destaque-p{max-width: 750px;
+                                width: 95%;
+                                height: 410px;
+                                margin: 0 auto;
+                                border-left: 5px solid #ccc;}
+    
+    .slider-destaque-p .aspas{width: 64px;
+                       height: 64px;
+                       background-image: url('../images/aspas-direita.png');
+                       background-size: contain;
+                       float: right;}
+    
+    .slider-destaque-p .slider-destaque{width: 100%;
+                                        overflow: hidden;}
+    
+    
+    .slider-destaque .artigo-art-p{width: 100%;}
+    
+    .artigo-art-p .artigo-art{width: 100%;
+                              float: left;}
+    
+    
+    .artigo-art > article{
+                          padding: 0 5%;
+                          width: 90%;}
+    
+    .artigo-art article > h2{font-size: 31px;}
+    
+    .artigo-art article > p{font-size: 25px;
+                            text-align: justify;
+                            margin-top: 15px;
+                            margin-bottom: 15px;}
+    
+    .artigo-art article > span{font-size: 25px;
+                               }
+    
+    
+    
+    .bullets-nav{
+          width: 100%;
           text-align: center;
-          color: white;
-          position: relative;
-          top: 300px;}
-
-.sessao-artigos{width: 100%;
-                text-align: justify;
-                position: relative;
-                top: 200px;}
-
-.sessao-artigos > article{width: 80%;
-                          border-bottom: 1px solid #ccc;
-                          margin: 0 auto;
-                          padding-bottom: 35px;}
-
-.sessao-artigos > article > h2{font-size: 25px;}
-
-.sessao-artigos > article > p{font-size: 18px;
-                              margin-top: 25px;
-                              margin-bottom: 25px;}
-
-.sessao-artigos > article > span{font-size: 18px;}
-
-
-.pos1 > article:first-child{margin-top: 100px;}
-
-
-.sessao-artigos2{width: 100%;
-                text-align: justify;
-                position: relative;
-                top: 400px;}
-
-.sessao-artigos2 > article{width: 80%;
-                           border-bottom: 1px solid #ccc;
-                           margin: 0 auto;
-                           padding-bottom: 35px;}
-
-.sessao-artigos2 > article > h2{font-size: 25px;}
-
-.sessao-artigos2 > article > p{font-size: 18px;
-                               margin-top: 25px;
-                               margin-bottom: 25px;}
-
-.sessao-artigos2 > article > span{font-size: 18px;}
-
-
-
-@media screen and (max-width: 768px){
-
-      .principal .slider-destaque{height: 510px;}
-
-      
-      .artigo-art article > h2{margin-top: 65px;}
-
-      .artigo-art article > p{margin-top: 25px;
-                              margin-bottom: 25px;}
-
-      
-
-
-}
-
-
-
-@media screen and (max-width: 668px){
-
-      .principal .slider-destaque{height: 610px;}
-
-      
-}
-
-
-
-@media screen and (max-width: 500px){
-
-      .principal .slider-destaque{height: 710px;}
-
-      
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+          
+    }
+    
+    .bullets-nav span{
+          width: 16px;
+          height: 16px;
+          display: inline-block;
+          border-radius: 8px;
+          background-color: #ccc;
+          cursor: pointer;
+          margin:0 20px;
+    }
+    
+    .anuncio{width: 95%;
+             max-width: 700px;
+             height: 250px;
+             background-color: #3c4043;
+             line-height: 250px;
+             text-align: center;
+             color: white;
+             position: relative;
+             top: 200px;
+             left: 50%;
+             transform: translate(-50%);}
+    
+    .anuncio2{width: 95%;
+              max-width: 500px;
+              height: 500px;
+              background-color: #3c4043;
+              margin: 0 auto;
+              line-height: 500px;
+              text-align: center;
+              color: white;
+              position: relative;
+              top: 300px;}
+    
+    .sessao-artigos{width: 100%;
+                    text-align: justify;
+                    position: relative;
+                    top: 200px;}
+    
+    .sessao-artigos > article{width: 80%;
+                              border-bottom: 1px solid #ccc;
+                              margin: 0 auto;
+                              padding-bottom: 35px;}
+    
+    .sessao-artigos > article > h2{font-size: 25px;}
+    
+    .sessao-artigos > article > p{font-size: 18px;
+                                  margin-top: 25px;
+                                  margin-bottom: 25px;}
+    
+    .sessao-artigos > article > span{font-size: 18px;}
+    
+    
+    .pos1 > article:first-child{margin-top: 100px;}
+    
+    
+    .sessao-artigos2{width: 100%;
+                    text-align: justify;
+                    position: relative;
+                    top: 400px;}
+    
+    .sessao-artigos2 > article{width: 80%;
+                               border-bottom: 1px solid #ccc;
+                               margin: 0 auto;
+                               padding-bottom: 35px;}
+    
+    .sessao-artigos2 > article > h2{font-size: 25px;}
+    
+    .sessao-artigos2 > article > p{font-size: 18px;
+                                   margin-top: 25px;
+                                   margin-bottom: 25px;}
+    
+    .sessao-artigos2 > article > span{font-size: 18px;}
+    
+    
+    
+    @media screen and (max-width: 768px){
+    
+          .principal .slider-destaque-p{height: 510px;}
+    
+          .artigo-art article > p{margin-top: 25px;
+                                  margin-bottom: 25px;}
+    
+          
+    
+    
+    }
+    
+    
+    
+    @media screen and (max-width: 668px){
+    
+          .principal .slider-destaque-p{height: 610px;}
+    
+          .principal > h1{margin-left: 10%;}
+          
+    }
+    
+    
+    
+    @media screen and (max-width: 500px){
+    
+          .principal .slider-destaque-p{height: 710px;}
+    
+          .principal > h1{margin-left: 8%;}
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

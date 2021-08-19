@@ -1,45 +1,58 @@
 $(function(){
 
-	var indiceAtual = 0;
-	var indiceMaximo = $('.artigo-art article').length;
-	var delay = 5000;
+	var delay = 8000;
+	var curIndex = 0;
+	var amt;
 
 	initSlider();
-	clickSlider();
+	autoPlay();
 
 	function initSlider(){
-		for(var i = 0; i < indiceMaximo; i++){
-			if(i == 0){
-				$('.bullets-nav').append('<span style="background-color: #069;"></span>');
-			}else{
-				$('.bullets-nav').append('<span></span>');
-			}
+
+		amt = $('.artigo-art').length;
+		var sizeContainer = 100 * amt;
+		var sizeBoxSingle = 100 / amt;
+		$('.artigo-art').css('width',sizeBoxSingle+'%');
+		$('.artigo-art-p').css('width',sizeContainer+'%');
+
+		for(var i = 0; i < amt; i++){
+			if(i == 0)
+				$('.bullets-nav').append('<span style="background-color: rgb(170,170,170)"></span>');
+			else
+				$('.bullets-nav').append('<span></span>');			
 		}
+	
 
-		$('.artigo-art article').eq(0).fadeIn();
+	}
+
+
+	function autoPlay(){
 		setInterval(function(){
-			alternarSlider();
-		},delay);
+
+			curIndex++;
+			if(curIndex == amt)
+				curIndex = 0;
+			goToSlider(curIndex);
+
+		},delay)
+		
+
 	}
 
-	function clickSlider(){
-		$('.bullets-nav span').click(function(){
-			$('.artigo-art article').eq(indiceAtual).stop().fadeOut(2000);
-			indiceAtual = $(this).index();
-			$('.artigo-art article').eq(indiceAtual).stop().fadeIn(2000);
-			$('.bullets-nav span').css('background-color','#ccc');
-			$(this).css('background-color','#069');
 
-		});
+	function goToSlider(curIndex){
+
+		var offSetX = $('.artigo-art').eq(curIndex).offset().left - $('.artigo-art-p').offset().left;
+		$('.bullets-nav span').css('background-color','rgb(200,200,200)');
+		$('.bullets-nav span').eq(curIndex).css('background-color','rgb(170,170,170)');
+		$('.slider-destaque').stop().animate({'scrollLeft':offSetX+'px'});		
 	}
 
-	function alternarSlider(){
-		$('.artigo-art article').eq(indiceAtual).stop().fadeOut(2000);
-		indiceAtual+=1;
-		if(indiceAtual == indiceMaximo)
-			indiceAtual = 0;
-		$('.bullets-nav span').css('background-color','#ccc');
-		$('.bullets-nav span').eq(indiceAtual).css('background-color','#069');
-		$('.artigo-art article').eq(indiceAtual).stop().fadeIn(2000);
-	}
+
+	$(window).resize(function(){
+
+		$('.slider-destaque').stop().animate({'scrollLeft':0});
+
+	});
+
 });

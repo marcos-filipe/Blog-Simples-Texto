@@ -53,6 +53,6 @@ $(function(){
 
 		$('.slider-destaque').stop().animate({'scrollLeft':0});
 
-	});
+	}); 
 
 });
